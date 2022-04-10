@@ -11,6 +11,8 @@ const routes = [
                 path: '',
                 name: 'dashboard',
                 // component: () => import('./components/Dashboard.vue')
+                component: () => import('./components/NotFound.vue')
+
             },
 
 
@@ -19,6 +21,8 @@ const routes = [
                 path: '/platforms',
                 name: 'platforms',
                 // component: () => import('./components/platforms.vue')
+                component: () => import('./components/NotFound.vue')
+
             },
             {
                 path: '/codename',
@@ -36,8 +40,12 @@ const routes = [
                 component: () => import('./components/OIDs.vue')
             },
 
+
+
         ]
     },
+
+
 
 ];
 

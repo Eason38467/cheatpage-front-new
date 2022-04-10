@@ -233,7 +233,6 @@ export default {
       this.deleteCodenameDialog = true;
     },
     deleteCodename() {
-      console.log(this.vvvvvvvvvvvvvv)
 
       axios.delete(`api/codename/delcodename/${this.newcodename._id}`, this.newcodename)
           .then(res=>{
