@@ -49,7 +49,7 @@
           <Column field="desc" header="Description"  >
             <template #body="slotProps">
               <span class="p-column-title">Description</span>
-              <ScrollPanel style=" height: 100px" class="custombar1">
+              <ScrollPanel style=" height: 100px; white-space: pre-wrap" class="custombar1">
                 <p>
                   {{slotProps.data.desc}}
                 </p>
@@ -77,13 +77,15 @@
 
         <Dialog v-model:visible="abbDialog" :style="{width: '450px'}" header="Abbreviation Detail" :modal="true" class="p-fluid">
           <div class="field">
-            <label for="name">Name</label>
+            <H5 for="name">Name</H5>
             <InputText id="name"  v-model.trim="newabb.abb" required="true" autofocus :class="{'p-invalid': submitted && !newabb.abb}" />
             <small class="p-invalid" v-if="submitted && !newabb.abb">Name is required.</small>
           </div>
           <div class="field">
-            <label for="description">Description</label>
+            <H5 for="description">Description</H5>
             <Textarea id="description" v-model="newabb.desc" required="true" rows="3" cols="20" />
+            <small class="p-invalid" v-if="submitted && !newabb.desc">Description is required.</small>
+
           </div>
 
           <template #footer>

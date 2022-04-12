@@ -75,13 +75,15 @@
 
         <Dialog v-model:visible="codenameDialog" :style="{width: '450px'}" header="Codename Detail" :modal="true" class="p-fluid">
           <div class="field">
-            <label for="name">Name</label>
+            <H5 for="name">Name</H5>
             <InputText id="name"  v-model.trim="newcodename.cdname" required="true" autofocus :class="{'p-invalid': submitted && !newcodename.cdname}" />
             <small class="p-invalid" v-if="submitted && !newcodename.cdname">Name is required.</small>
           </div>
           <div class="field">
-            <label for="description">Description</label>
+            <H5 for="description">Description</H5>
             <Textarea id="description" v-model="newcodename.desc" required="true" rows="3" cols="20" />
+            <small class="p-invalid" v-if="submitted && !newcodename.desc">Description is required.</small>
+
           </div>
 
           <template #footer>

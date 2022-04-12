@@ -36,7 +36,19 @@ export default {
             mobileMenuActive: false,
 
           menu : [
-                {
+            {
+              label: 'Platform Research', icon: 'pi pi-fw pi-sitemap',
+              items: [
+                {label: 'Nexus Platform', icon: 'pi pi-fw pi-bookmark', to: '/platforms'},
+                {label: 'NX-OS CodeName', icon: 'pi pi-fw pi-bookmark', to: '/codename'},
+                {label: "Abbreviation", icon: "pi pi-fw pi-bookmark", to: "/abbreviation"},
+                {label: "OID", icon: "pi pi-fw pi-bookmark", to: "/oids"},
+                {label: "Add General Checklists", icon: "pi pi-fw pi-bookmark", to: "/editpage"},
+
+
+              ]
+            },
+            {
                     label: 'DaLian Lab Portal',
                     items: [
                       {label: 'Lab Dashboard', icon: 'pi pi-fw pi-home', to: '/'},
@@ -46,18 +58,7 @@ export default {
 
                     ]
                 },
-				{
-					label: 'Platform Research', icon: 'pi pi-fw pi-sitemap',
-					items: [
-						{label: 'Nexus Platform', icon: 'pi pi-fw pi-bookmark', to: '/platforms'},
-						{label: 'NX-OS CodeName', icon: 'pi pi-fw pi-bookmark', to: '/codename'},
-            {label: "Abbreviation", icon: "pi pi-fw pi-bookmark", to: "/abbreviation"},
-            {label: "OID", icon: "pi pi-fw pi-bookmark", to: "/oids"},
-            {label: "Add General Checklists", icon: "pi pi-fw pi-bookmark", to: "/editpage"},
-
-
-          ]
-				}, {
+{
               label: 'Tool Box', icon: 'pi pi-fw pi-sitemap',
               items: [
         {label: 'Form Layout', icon: 'pi pi-fw pi-id-card', to: '/formlayout'},

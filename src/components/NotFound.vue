@@ -1,5 +1,5 @@
 <template>
-    <div class="surface-0 flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden">
+    <div class="surface-0 flex align-items-center justify-content-center min-h-screen  ">
         <div class="grid justify-content-center p-2 lg:p-0" style="min-width:80%">
             <div class="col-12 mt-5 xl:mt-0 text-center">
             </div>
@@ -8,7 +8,7 @@
                     <div class="grid flex-column align-items-center">
                         <span class="text-blue-500 font-bold text-3xl">404</span>
                         <h1 class="text-900 font-bold text-3xl lg:text-5xl mb-2">Looks like you are lost</h1>
-                        <span class="text-gray-600">Requested resource is not available.</span>
+                        <span class="">Requested resource is not available.</span>
                         <div class="col-12 mt-5 text-center">
                             <i class="pi pi-fw pi-arrow-left text-blue-500 mr-2" style="vertical-align:center;"></i>
                             <router-link to="/" class="text-blue-500">Go to Home</router-link>

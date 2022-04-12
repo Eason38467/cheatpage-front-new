@@ -20,8 +20,7 @@ const routes = [
             {
                 path: '/platforms',
                 name: 'platforms',
-                // component: () => import('./components/platforms.vue')
-                component: () => import('./components/NotFound.vue')
+                component: () => import('./components/platforms.vue')
 
             },
             {

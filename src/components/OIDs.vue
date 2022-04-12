@@ -82,19 +82,21 @@
         </DataTable>
 
 
-        <Dialog v-model:visible="oidDialog" :style="{width: '450px'}" header="OID Detail" :modal="true" class="p-fluid">
+        <Dialog v-model:visible="oidDialog" :style="{width: '450px'}" header="OID Detail" :modal="true" class="p-fluid" >
           <div class="field">
-            <label for="name">Name</label>
+            <H5 for="name">Name</H5>
             <InputText id="name"  v-model.trim="newoid.oid" required="true" autofocus :class="{'p-invalid': submitted && !newoid.oid}" />
             <small class="p-invalid" v-if="submitted && !newoid.oid">Name is required.</small>
           </div>
           <div class="field">
-            <label for="description">Description</label>
+            <H5 for="description">Description</H5>
             <Textarea id="description" v-model="newoid.desc" required="true" rows="3" cols="20" />
+            <small class="p-invalid" v-if="submitted && !newoid.desc">Description is required.</small>
+
           </div>
 
           <div class="field">
-            <label class="p-mb-3">Platforms</label>
+            <H5 class="p-mb-3">Platforms</H5>
 
             <div class="p-d-inline">
 
@@ -183,6 +185,7 @@ export default {
       submitted: false,
 
 
+
     }
   },
 
@@ -232,7 +235,6 @@ export default {
 
       if (this.newoid.oid.trim()) {
         if (this.newoid._id) {
-
 
 
           axios.post(`api/oid/editoid/${this.newoid._id}`, this.newoid)
