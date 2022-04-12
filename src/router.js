@@ -38,6 +38,11 @@ const routes = [
                 name: 'oids',
                 component: () => import('./components/OIDs.vue')
             },
+            {
+                path: '/editpage',
+                name: 'editpage',
+                component: () => import('./components/Common Checklists.vue')
+            },
 
 
 

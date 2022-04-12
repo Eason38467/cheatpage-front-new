@@ -43,7 +43,7 @@ export default {
                 {label: 'NX-OS CodeName', icon: 'pi pi-fw pi-bookmark', to: '/codename'},
                 {label: "Abbreviation", icon: "pi pi-fw pi-bookmark", to: "/abbreviation"},
                 {label: "OID", icon: "pi pi-fw pi-bookmark", to: "/oids"},
-                {label: "Add General Checklists", icon: "pi pi-fw pi-bookmark", to: "/editpage"},
+                {label: "General Checklists", icon: "pi pi-fw pi-bookmark", to: "/editpage"},
 
 
               ]

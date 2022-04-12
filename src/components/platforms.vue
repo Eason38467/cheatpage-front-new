@@ -25,7 +25,7 @@
 
         <DataTable ref="dt" v-model:expandedRows="expandedRows" :value="ptfList" v-model:selection="selectedptfs" dataKey="_id" :paginator="true" :rows="10" :filters="filters"
                    paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" :rowsPerPageOptions="[5,10,25,50]"
-                   currentPageReportTemplate="Showing {first} to {last} of {totalRecords} products" responsiveLayout="scroll">
+                   currentPageReportTemplate="Showing {first} to {last} of {totalRecords} Records" responsiveLayout="scroll">
 
           <template #header>
             <div class="flex flex-column md:flex-row md:justify-content-between md:align-items-center">
@@ -321,7 +321,7 @@
         <Dialog v-model:visible="deleteptfDialog" :style="{width: '450px'}" header="Confirm" :modal="true" >
           <div class="flex align-items-center justify-content-center">
             <i class="pi pi-exclamation-triangle mr-3" style="font-size: 2rem" />
-            <span v-if="ptfList">Are you sure you want to delete <b>{{ptfList.ptf}}</b>?</span>
+            <span >Are you sure you want to delete ?</span>
           </div>
           <template #footer>
             <Button label="No" icon="pi pi-times" class="p-button-text" @click="deleteptfDialog = false"/>
